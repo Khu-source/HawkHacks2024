@@ -22,4 +22,136 @@
     </header>
     
 </body>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77a 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+        .tab {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .tab h2 {
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="number"] {
+            width: calc(100% - 22px);
+        }
+        .summary {
+            margin-top: 20px;
+            padding: 20px;
+            background: #e2e2e2;
+            border-radius: 8px;
+        }
+        .summary h3 {
+            margin-top: 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .btn:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Budgeting Tab</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="tab">
+            <h2>Income</h2>
+            <div class="form-group">
+                <label for="income-source">Source</label>
+                <input type="text" id="income-source" placeholder="Enter income source">
+            </div>
+            <div class="form-group">
+                <label for="income-amount">Amount</label>
+                <input type="number" id="income-amount" placeholder="Enter amount">
+            </div>
+            <button class="btn">Add Income</button>
+        </div>
+
+        <div class="tab">
+            <h2>Expenses</h2>
+            <div class="form-group">
+                <label for="expense-category">Category</label>
+                <input type="text" id="expense-category" placeholder="Enter expense category">
+            </div>
+            <div class="form-group">
+                <label for="expense-amount">Amount</label>
+                <input type="number" id="expense-amount" placeholder="Enter amount">
+            </div>
+            <button class="btn">Add Expense</button>
+        </div>
+
+        <div class="tab">
+            <h2>Savings Goals</h2>
+            <div class="form-group">
+                <label for="savings-goal">Goal</label>
+                <input type="text" id="savings-goal" placeholder="Enter savings goal">
+            </div>
+            <div class="form-group">
+                <label for="savings-amount">Amount</label>
+                <input type="number" id="savings-amount" placeholder="Enter amount">
+            </div>
+            <button class="btn">Add Goal</button>
+        </div>
+
+        <div class="summary">
+            <h3>Summary</h3>
+            <p>Total Income: $0</p>
+            <p>Total Expenses: $0</p>
+            <p>Total Savings: $0</p>
+            <p>Net Balance: $0</p>
+        </div>
+    </div>
+</body>
+
 </html>
