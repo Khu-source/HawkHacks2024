@@ -1,0 +1,265 @@
+/* POPPINS FONT */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+
+--light-color: #F6FFF8;
+--primary-color: #A4C3B2;
+--second-color: #6B9080;
+
+}
+h1{
+    padding-left:50px ;
+}
+head
+.header h1 {
+    padding: 60px;
+    text-align: center;
+    color: rgba(17, 36, 17, 0.2);
+    font-size: 48px;
+
+  }
+
+.header p{
+    padding: 50px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+
+}
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("pic.jpg");
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
+}
+
+
+/* ====== Reusable CSS ====== */
+a{
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+a:hover{
+    text-decoration: underline ;
+}
+
+/* ====== Wrapper ====== */
+
+.wrapper{
+    width: 420px;
+    background: solid;
+    background-color: rgba(9, 28, 9, 0.2);
+    color: #F6FFF8;
+    backdrop-filter: blur(20px);
+
+    border: 2px solid rgba(17, 36, 17, 0.2);
+    border-radius: 10px;
+    padding: 30px 40px;
+
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+/*..wrapper .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 30px 0;
+    backdrop-filter: blur(25px);
+    border: 2px solid rgba(1, 14, 1, 0.2);
+    border-radius: 15px;
+    padding: 7.5em 2.5em 4em 2.5em;
+    color: var(--primary-color);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+
+
+}*/
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(225, 225, 225, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 20px 45px 20px 20px;
+
+
+}
+
+.input-box input::placeholder{
+color: #F6FFF8;
+}
+
+/*.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+
+}*/
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0  15px;
+}
+
+
+.register-forgot label input {
+    color: #F6FFF8;
+    margin-right: 3px;}
+
+    .register-forgot a {
+        color: #F6FFF8;
+        text-decoration: none;}  
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #F6FFF8;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+.wrapper .register-link{
+
+    font-size: 14.5px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.register-link p a {
+    color: #F6FFF8;
+    font-weight: 600;
+}
+
+
+.login-header{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-color);
+    width: 140px;
+    height: 70px;
+    border-radius: 0 0 20px 20px;
+
+}
+
+.login-header span{
+    font-size: 30px;
+    color: var(--second-color);
+}
+
+.login-header::before{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-right-radius: 50%;
+    background: transparent;
+    box-shadow: 15px 0 0 0 var(--second-color);
+
+}
+
+.login-header::after{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    border-top-left-radius: 50%;
+    background: transparent;
+    box-shadow: -15px 0 0 0 var(--second-color);
+
+}
+
+.input_box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    right: 20px;
+
+
+}
+
+.input-field{
+width: 100%;
+height: 55px;
+right: 50px;
+
+font-size: 16px;
+background: transparent;
+color: #F6FFF8;
+padding-inline: 20px 50px;
+border: 2px solid var(--primary-color);
+border-radius: 30px;
+outline: none;
+
+}
+
+#user{
+    margin-bottom: 10px;
+
+}
+
+.label{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transition: .2s;
+
+}
+
+.input-field:focus~.label,
+.input-field:valid~.label{
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    color: var(--second-color);
+    padding: 0 10px;
+
+}
